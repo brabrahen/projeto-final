@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  header{
+      background-color: #F2B749;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #header-dir{
+      display: flex;
+      
+  }
+
+  .btn-h{
+      background-color: #F2B749;
+      font-size: 25px;
+      margin: 10px;
+      color: whitesmoke;
+      font-family: Andale Mono, monospace;
+      font-weight: bold
+      
+  }
+
+  #capa{
+      background-image: url(../img/capa2.jpg);
+      opacity: 85%;
+     height: 462px;
+  }
+
+  .ola{
+    font-size: 50px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  #ola{
+    font-size: 40px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 70px;
+    font-weight: 700;    
+  }
+
+  .ft-home{
+    background-color: #F2B749;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-content: right;
+    height: 120px;
+  }
+
+  footer img{
+      margin-left: 20px;
+  }
+
+  footer .btn-footer{
+    display: flex;
+    background-color: #F2B749;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold
+    
+}
+
+.ft-champs{
+    background-color: #F2B749;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-content: right;
+   
+  }
+
+.ft-champs{
+    display: flex;
+    background-color: #F2B749;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold
+    
+}
+
+#header-champs{
+    
+    background-color: #F2B749;
+    display: flex;
+    justify-content: space-between;
+}
+
+#body-champs{
+    background-color: #F2B749;
+}
+
+.main-champs{
+    height: 700px;
+    background-size: cover;
+    
+}
+
+#btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.botoes{
+    display: flex;
+    margin: 50px;
+    border-radius: 2rem;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#capinha{
+    display: flex;
+   background-size: cover;
+   background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#arrumando{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.direction{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    border-radius: 20px;
+    width: 70px;
+    height: 50px;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 800;
+}
+
+#span{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 2rem;
+    background-color: #0D0D0D;
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold
+}
+
+#main-det{
+    background-image: url(../img/capa-detalhes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#video{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+#caixa{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#texto{
+    margin-bottom: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 720px;
+    height: 250px;
+    background-color:#0D0D0D;
+    padding: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.footer-det{
+    background-color: #021859;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-content: right;
+    
+}
+
+footer .btn-det{
+    display: flexbox;
+    background-color: #021859;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold
+    
+}
+
+section#cadastro{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F2B749;
+    border: 1rem;
+}
+
+section#cadastro form{
+    width: 100%;
+    padding: 1rem;
+}
+
+section#cadastro form div label{
+    font-size: 1.3rem;
+    color:#D90B56;
+}
+
+section#cadastro form div input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 0.1rem solid rgba(0, 0, 0, 0.301);
+   
+}
+
+section#cadastro form button{
+    border: 1px solid rgb(255, 68, 68);
+    background-color: #ffff;
+    color: rgb(255, 68, 68);
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 40%;
+}
+
+
+section#message {
+    padding: 1.5rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+
+  .main-sobre{
+    background-image: url(../img/capa-sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 510px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.bruno{
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 350px;
+    height: 450px;
+    background-color: #691922;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#img_bruno{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+    border-radius: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px #F2B749 solid ;
+}
+
+.txt_bruno{
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F2B749;
+}
+
+#bbruno{
+    padding-bottom: 15px;
+}
+
+.brayan{
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 350px;
+    height: 450px;
+    background-color: #F2B749;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#img_brayan{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+    border-radius: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px #691922 solid ;
+}
+
+.txt_brayan{
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #691922;
+}
+
+#bbrayan{
+    padding-bottom: 15px;
+}
+
+.links{
+    display: flexbox;
+   justify-content: space-between;
+   margin: 15px;
+    padding-top: 20px;
+}
+
+
+#header-sobre{
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-sobre{
+    background-color: #0D0D0D;
+    font-size: 25px;
+    margin: 10px;
+    color: whitesmoke;
+    font-family: Andale Mono, monospace;
+    font-weight: bold
+}
+
+.footer-sobre{
+    background-color: #021859;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-content: right;
+    
+}
+
+footer .btn-sobre{
+    display: flexbox;
+    background-color: #021859;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    font-weight: bold
+    
+}
+
+#apagar-bd{
+    background-color: #F2B749;
+}

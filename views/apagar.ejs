@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Campeões | Deletar</title>
+</head>
+<body id="apagar-bd">
+    <nav>
+        <header>
+            <section id="header-esq">
+                <img src="./img/lebras.png" alt="" height="70px">
+                <a href="/" class="btn-h">Home</a>
+            </section>
+            <section id="header-dir">
+                <a href="/champs" class="btn-h">Últimos campeões</a>
+                <a href="/sobre" class="btn-h">Sobre nós</a>
+            </section>
+        </header>
+    </nav>
+    </article>
+    <section id="cadastro">
+        <form action="/apagar/<%= basquete.id %>" method="POST">
+            <button type="submit">Apagar <%= basquete.equipe %></button>
+        </form>
+    </section>
+    <script src="../js/script.js"></script>
+</body>
+</html>

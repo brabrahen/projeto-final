@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Detalhes</title>
+</head>
+<body>
+    <nav>
+    <header >
+        <section id="header-esq">
+            <img src="../img/logo-detalhes.png" alt="" height="70px">
+            <a href="/" class="btn-h">Home</a>
+        </section>
+        <section id="header-dir">
+            <a href="/champs" class="btn-h">Voltar para Campeões</a>
+        </section>
+        </header>
+    </nav>
+        <main id="main-det">
+            <span id="span"><%= basquete.equipe %></span>
+            <section id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= basquete.video %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+            </section>
+            <section id="caixa">
+                <div id="texto">
+                    <%= basquete.descricao %>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-det"> 
+            <img src="./img/logo-footer.png" alt="" height="80px">
+            <a href="https://www.todamateria.com.br/basquetebol/" class="btn-det">Um pouco da história do Basquete|</a>
+            <a href="/add" class="btn-det">Adicionar um time|</a>
+            <a href="https://pt.wikipedia.org/wiki/National_Basketball_Association" class="btn-det">Sobre a NBA|</a>
+            <a href="https://www.espn.com.br/nba/calendario" class="btn-det">|Jogos da temporada|</a>
+        </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

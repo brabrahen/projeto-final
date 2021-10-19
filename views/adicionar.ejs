@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cadastro</title>
+</head>
+<main>
+<body>
+    <nav>
+        <header>
+            <section id="header-esq">
+                <img src="./img/lebras.png" alt="" height="70px">
+                <a href="/" class="btn-h">Home</a>
+            </section>
+            <section id="header-dir">
+                <a href="/champs" class="btn-h">Últimos campeões</a>
+                <a href="/sobre" class="btn-h">Sobre nós</a>
+            </section>
+        </header>
+    </nav>
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+    <main>
+    <section id="cadastro" >
+        <form action="/add" method="POST">
+            <div>
+                <label for="equipe">Equipe: </label>
+                <input type="text" name="equipe" id="equipe" placeholder="Digite o nome da equipe" required>
+            </div>
+            <div>
+                <label for="video">Vídeo:(copie apenas o link depois do sinal de igual) </label>
+                <input type="text" name="video" id="video" placeholder="https://www.youtube.com/watch?v=" required>
+            </div>
+            <div>
+                <label for="card">Imagem do card: </label>
+                <input type="text" name="card" id="card" placeholder="Digite o link da imagem de seu card" required>
+            </div>
+            <div>
+                <label for="descricao">Descrição: </label>
+                <input type="text" name="descricao" id="descricao" placeholder="Digite o resumo de como a equipe chegou até as Finais" required>
+            </div>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+    <footer class="ft-home">
+        <img src="./img/logo-footer.png" alt="" height="80px">
+        <a href="https://www.todamateria.com.br/basquetebol/" class="btn-footer">Um pouco da história do Basquete|</a>
+        <a href="/add" class="btn-footer">Adicionar um time|</a>
+        <a href="https://pt.wikipedia.org/wiki/National_Basketball_Association" class="btn-footer">Sobre a NBA|</a>
+        <a href="https://www.espn.com.br/nba/calendario" class="btn-footer">|Jogos da temporada|</a>
+    </footer>
+    <script src="../js/script.js"></script>
+</main>
+
+</body>
+</html>

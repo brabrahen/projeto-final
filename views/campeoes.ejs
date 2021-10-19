@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Campeões</title>
+</head>
+<body id="body-champs">
+    <nav>
+    <header id="header-champs">
+        <section id="header-esq">
+            <img src="./img/header-champs1.png" alt="" height="70px">
+            <a href="/" class="btn-h">Home</a>
+        </section>
+        <section id="header-dir">
+            <a href="/add" class="btn-h">Adicionar um time</a>
+            <a href="/sobre" class="btn-h">Sobre nós</a>
+        </section>
+    </header>
+</nav>
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+    <main class="main-champs">
+        <section id="btns">
+            <% basquete.forEach((item) => { %>
+                <section id="arrumando">
+                <a class="botoes" href="/detalhes/<%= item.id %>">
+                    <img class="botoes" id="capinha" src="<%= item.card %>">
+                </a>
+                <a class="direction" href = "/edit/<%= item.id %>">Editar</a>
+                <a class="direction" href = "/apagar/<%= item.id %>">Deletar</a>
+                </section>
+                <% }) %>
+        </section>
+        <footer class="ft-home">
+            <img src="../img/logo-footer.png" alt="" height="80px">
+            <a href="https://www.todamateria.com.br/basquetebol/" class="btn-footer">Um pouco da história do Basquete|</a>
+            <a href="https://pt.wikipedia.org/wiki/National_Basketball_Association" class="btn-footer">Sobre a NBA|</a>
+            <a href="https://www.espn.com.br/nba/calendario" class="btn-footer">|Jogos da temporada|</a>
+        </footer>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
