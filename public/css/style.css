@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
+  @media only screen and (max-device-width: 900px) {
+    .menu { width:600px; }
+    }
+
   header{
       background-color: #F2B749;
       display: flex;
@@ -410,4 +414,24 @@ footer .btn-sobre{
 
 #apagar-bd{
     background-color: #F2B749;
+}
+
+.btn-direcao{
+    display: flex;
+    margin-top: 115px;
+    border: 30px;
+}
+
+#editar{
+    padding: 10px;
+    border: 5px;
+    margin-right: -320px;
+    margin-left: -60px;
+}
+
+#deletar{
+    padding: 10px;
+    border: 5px;
+    margin-right: 80px;
+   
 }

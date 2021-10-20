@@ -32,8 +32,10 @@
                 <a class="botoes" href="/detalhes/<%= item.id %>">
                     <img class="botoes" id="capinha" src="<%= item.card %>">
                 </a>
-                <a class="direction" href = "/edit/<%= item.id %>">Editar</a>
-                <a class="direction" href = "/apagar/<%= item.id %>">Deletar</a>
+                <section class="btn-direcao">
+                <a class="direction" href = "/edit/<%= item.id %>" id="editar">Editar</a>
+                <a class="direction" href = "/apagar/<%= item.id %>" id="deletar">Deletar</a>
+                </section>
                 </section>
                 <% }) %>
         </section>
